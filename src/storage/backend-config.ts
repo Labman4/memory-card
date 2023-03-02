@@ -15,8 +15,8 @@ export interface StorageS3Options {
   accessKeyId     : string,
   secretAccessKey : string,
   region          : string,
-  // //////////////////////
-  bucket : string,
+  endpoint        : string,
+  bucket          : string,
 }
 
 export interface StorageObsOptions {

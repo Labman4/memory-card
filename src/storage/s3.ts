@@ -36,9 +36,11 @@ class StorageS3 extends StorageBackend {
         secretAccessKey : options.secretAccessKey,
       },
       region: options.region,
+      endpoint: options.endpoint,
+      s3ForcePathStyle: true
     })
   }
-
+  
   override toString (): string {
     const text = [
       this.constructor.name,
@@ -54,7 +56,7 @@ class StorageS3 extends StorageBackend {
 
     const options = this.options as StorageS3Options
 
-    await this.s3.putObject({
+    await this.s3.upload({
       Body   : JSON.stringify(payload),
       Bucket : options.bucket,
       Key    : this.name,

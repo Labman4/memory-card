@@ -1,6 +1,6 @@
 {
-  "name": "memory-card",
-  "version": "1.1.2",
+  "name": "memory-card-lab",
+  "version": "1.1.7",
   "description": "ES6 Map like Async API, with Swagger API Backend Support.",
   "type": "module",
   "exports": {
@@ -50,22 +50,21 @@
   },
   "homepage": "https://github.com/huan/memory-card#readme",
   "devDependencies": {
-    "@chatie/eslint-config": "^1.0.4",
+    "@chatie/eslint-config": "^1.4.1",
     "@chatie/git-scripts": "^0.6.2",
     "@chatie/semver": "^0.4.7",
-    "@chatie/tsconfig": "^4.5.3",
-    "aws-sdk": ">=2.1037.0",
-    "esdk-obs-nodejs": ">=3.21.6",
+    "@chatie/tsconfig": "^4.9.1",
+    "aws-sdk": "^2.1323.0",
+    "esdk-obs-nodejs": "^3.21.6",
     "etcd3": "^1.1.0",
     "pkg-jq": "^0.2.11",
-    "shx": "^0.3.3",
-    "tstest": "^1.0.1"
+    "shx": "^0.3.4",
+    "tstest": "^1.2.8"
   },
   "publishConfig": {
     "access": "public",
     "tag": "next"
   },
-  "peerDependencies": {},
   "dependencies": {
     "async-map-like": "^1.0.2",
     "brolog": "^1.14.2"
@@ -73,10 +72,5 @@
   "files": [
     "dist",
     "src"
-  ],
-  "git": {
-    "scripts": {
-      "pre-push": "npx git-scripts-pre-push"
-    }
-  }
+  ]
 }
